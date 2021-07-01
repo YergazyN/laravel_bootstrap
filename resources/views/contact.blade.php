@@ -5,17 +5,7 @@
 @endsection
 
 @section('content')
-    <h1>Contacts</h1>
-
-    @if($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
+    <h1>Contacts</h1>    
 
     <form class="" action="{{ route('contact-form')}}" method="post">
 

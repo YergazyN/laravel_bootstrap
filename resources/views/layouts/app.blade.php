@@ -12,15 +12,24 @@
 
     
 
-    <div class="container">
+    <div class="container">       
 
-        @include('includes.header') 
+        @include('includes.header')
+
+        <div class="row">
+             @include('includes.messages')
+        </div> 
 
         @if(Request::is('/'))
             @include('includes.hero')            
         @endif
-        
+
+
+
         <div class="row mt-5">
+
+           
+
             <div class="col-3">
                  @include('includes.aside')
             </div>
